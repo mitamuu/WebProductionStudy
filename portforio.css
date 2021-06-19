@@ -1,0 +1,347 @@
+@charset "utf-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* ========================================
+    リセットCSSここまで
+=========================================*/
+
+body {
+    background: url(images/white-waves.png) no-repeat;
+    background-size: cover;
+    border-top: 1px double rgba(0, 0, 0, 0.5);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div#wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.box-shadow {
+    box-shadow: 0 2px 7px rgba(83, 78, 61, 0.3);
+}
+
+
+/* ========================================
+    header用
+=========================================*/
+
+header {
+    width: 960px;
+    height: 49px;
+    padding: 20px 0;
+    position: relative;
+}
+
+header h1 {
+    font-size: 12px;
+    color: #2c2b2b;
+    font-family: "メイリオ", Meiryo;
+    background: url() no-repeat;
+    padding-left: 51px;
+    line-height: 1;
+    height: 49px;
+    float: left;
+}
+
+header h1 span {
+    font-size: 33px;
+    color: #575655;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+header nav {
+    float: right;
+    margin-top: 36px;
+}
+
+header nav ul li {
+    float: left;
+    margin-left: 29px;
+}
+
+header nav ul li:hover a {
+    background: url() no-repeat center bottom;
+    height: 36px;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 0em;
+    font-size: 20px;
+}
+
+header nav ul li a {
+    font-size: 15px;
+    font-weight: bold;
+    color: #734339;
+    text-decoration: none;
+    height: 26px;
+    display: inline-block;
+}
+
+
+/* 
+header nav ul li :hover {
+    color: #345c39;
+    border-bottom: 4px solid #345c39;
+} */
+
+div.clear {
+    clear: both;
+}
+
+header p#nav_tel {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+div#mainImage img {
+    width: 950px;
+    height: 290px;
+    margin: 20px 0;
+    border: 5px solid #fff;
+}
+
+
+/* ========================================
+    contentLeft
+=========================================*/
+
+div#left {
+    width: 555px;
+    height: 178px;
+    background-color: #fff;
+    float: left;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+div#left h2 {
+    font-size: 17px;
+    font-weight: bold;
+    color: #734339;
+    border-left: 5px solid #ba3009;
+    padding-left: 10px;
+}
+
+div#left ul {
+    overflow: scroll;
+    widows: 555px;
+    height: 145px;
+}
+
+div#left ul li {
+    font-size: 13px;
+    font-weight: normal;
+    color: #927e7a;
+    border-bottom: 1px dotted #d0d0d0;
+    line-height: 32px;
+}
+
+div#left ul li span {
+    font-size: 12px;
+    font-weight: normal;
+    color: #b5b323;
+    margin-right: 15px;
+}
+
+
+/* ========================================
+    contentsright
+=========================================*/
+
+div#right {
+    width: 365px;
+    height: 198px;
+    float: left;
+}
+
+div#right ul li {
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+
+div#right ul li a {
+    width: 225px;
+    height: 60px;
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+    color: #734339;
+    text-decoration: none;
+    padding-left: 140px;
+}
+
+div#right ul li a#contact {
+    background: url(images/full-bloom.png);
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.5);
+}
+
+div#right ul li a#blog {
+    background: url(images/full-bloom.png);
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.5);
+}
+
+div.clear {
+    clear: both;
+}
+
+
+/* ========================================
+    footer
+=========================================*/
+
+footer {
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 58px;
+    line-height: 58px;
+    background-color: #3f3e41;
+    margin-top: 20px;
+}
+
+
+/* ========================================
+    リセットCSSここまで
+=========================================*/
+
+
+/* ========================================
+    リセットCSSここまで
+=========================================*/
